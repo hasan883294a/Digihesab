@@ -1,3 +1,218 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- =========================================
+       بخش سئو و اطلاعات برای گوگل
+  ========================================== -->
+  <title>محاسبه سود فروشندگان دیجی‌کالا (رایگان) | دیجی‌حساب</title>
+  <meta name="description" content="نرم‌افزار آنلاین محاسبه سود خالص، کمیسیون، هزینه لیبل و پردازش دیجی‌کالا. فایل اکسل فروش خود را تحلیل کنید و سود واقعی را ببینید.">
+  <meta name="keywords" content="محاسبه کمیسیون دیجی کالا, سود فروش دیجی کالا, پنل فروشندگان, اکسل حسابداری دیجی کالا, ماشین حساب دیجی کالا">
+  <link rel="canonical" href="https://hasan883294a.github.io/Digihesab/">
+
+  <!-- =========================================
+       آیکون سایت (Favicon) - خودکار ساخته می‌شود
+  ========================================== -->
+  <!-- این خط یک آیکون دایره‌ای آبی با حرف D می‌سازد -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%232563eb%22/><text x=%2250%22 y=%2272%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22tahoma,sans-serif%22 font-weight=%22bold%22>D</text></svg>">
+
+  <!-- =========================================
+       تنظیمات اشتراک‌گذاری (تلگرام/واتس‌اپ)
+  ========================================== -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="دیجی‌حساب | محاسبه سود واقعی فروش">
+  <meta property="og:description" content="با یک کلیک سود واقعی، کمیسیون و هزینه‌های پنهان فروش خود در دیجی‌کالا را محاسبه کنید.">
+  <meta property="og:url" content="https://hasan883294a.github.io/Digihesab/">
+  <meta property="og:image" content="https://hasan883294a.github.io/Digihesab/dashboard.jpg">
+
+  <!-- =========================================
+       اسکیما (زبان ربات‌های گوگل)
+  ========================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "DigiHesab",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "IRR"
+    },
+    "description": "ابزار محاسبه سود و کمیسیون فروشندگان دیجی‌کالا"
+  }
+  </script>
+
+  <!-- =========================================
+       استایل‌ها (CSS)
+  ========================================== -->
+  <style>
+    /* تنظیمات کلی */
+    body {
+      font-family: 'Tahoma', 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f8fafc;
+      color: #334155;
+      line-height: 2;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 0 20px 60px 20px;
+    }
+
+    /* هدر سایت */
+    header {
+      text-align: center;
+      padding: 90px 20px 130px; /* فضای پایین برای عکس */
+      background: linear-gradient(135deg, #ef394e 0%, #b91c1c 100%);
+      color: #fff;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      margin-bottom: 60px;
+    }
+    header h1 {
+      font-size: 2.1rem;
+      margin-bottom: 15px;
+      font-weight: 900;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header p {
+      font-size: 1.15rem;
+      opacity: 0.95;
+      max-width: 650px;
+      margin: 0 auto 30px;
+    }
+    
+    /* دکمه‌ها */
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      background: #fff;
+      color: #b91c1c;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: all 0.2s;
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+    .btn-secondary {
+      background: #10b981; /* سبز */
+      color: #fff;
+      margin-top: 10px;
+    }
+
+    /* عکس داشبورد */
+    .dashboard-preview {
+      display: block;
+      margin: -100px auto 50px; /* کشیدن عکس روی هدر */
+      max-width: 90%;
+      width: 450px;
+      border-radius: 16px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+      border: 5px solid #fff;
+    }
+
+    /* باکس‌های محتوا */
+    section {
+      margin-top: 40px;
+      background: #fff;
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      border: 1px solid #f1f5f9;
+    }
+    h2 {
+      color: #b91c1c;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      border-right: 4px solid #b91c1c;
+      padding-right: 12px;
+    }
+    
+    /* لیست‌ها */
+    ul { padding-right: 20px; }
+    li { margin-bottom: 10px; }
+
+    /* سوالات متداول (FAQ) */
+    details {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #f1f5f9;
+      padding-bottom: 10px;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #1e293b;
+      list-style: none; /* حذف فلش پیش‌فرض */
+      position: relative;
+      padding-right: 20px;
+    }
+    summary::after {
+      content: "+";
+      position: absolute;
+      right: 0;
+      color: #b91c1c;
+      font-weight: bold;
+    }
+    details[open] summary::after {
+      content: "-";
+    }
+    details p {
+      margin-top: 10px;
+      color: #64748b;
+      font-size: 0.95rem;
+      padding-right: 20px;
+    }
+
+    /* فوتر */
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+
+    /* موبایل */
+    @media (max-width: 600px) {
+      header { padding-bottom: 90px; }
+      header h1 { font-size: 1.6rem; }
+      .dashboard-preview { margin-top: -70px; width: 90%; }
+      section { padding: 25px 20px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>دیجی‌حساب: محاسبه سود فروش دیجی‌کالا</h1>
+  <p>
+    ابزار رایگان و هوشمند برای تحلیل صورت‌حساب فروشندگان.
+    محاسبه دقیق کمیسیون، هزینه‌های پردازش و سود خالص بدون نیاز به اکسل.
+  </p>
+  <a class="btn" href="https://script.google.com/macros/s/AKfycbxsDJ3QFoeEJcko6WPpsL8CXmDj02TzVEIgAFqL_5PQkQCKYzM5JhvixgDW4_JOpVNj1w/exec">ورود به پنل کاربری</a>
+</header>
+
+<div class="container">
+  
+  <!-- عکس داشبورد (باید فایل dashboard.jpg در گیت‌هاب باشد) -->
+  <img src="dashboard.jpg" alt="نمای پنل کاربری دیجی حساب" class="dashboard-preview">
+
+  <section>
+    <h2>چرا دیجی‌حساب؟</h2>
+    <p>
+      محاسبه سود واقعی در پنل سلر سنتر دیجی‌کالا دشوار است. هزینه‌های پنهان مثل "سهم مشارکت در تخفیف"، "هزینه لیبل"، "هزینه پردازش و ارسال" و "مالیات" باعث می‌شود ندانید چقدر ته حساب می‌ماند. دیجی‌حساب فایل اکسل فروش شما را می‌گیرد و در عرض چند ثانیه همه این‌ها را شفاف می‌کند.
+    </p>
+  </section>
+
   <section>
     <h2>امکانات کلیدی</h2>
     <ul>
