@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://digihesab.ir/</loc>
-    <lastmod>2025-04-01</lastmod> <!-- تاریخ را به روز کنید -->
+    <loc>https://hasan883294a.github.io/Digihesab/</loc>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://hasan883294a.github.io/Digihesab/dashboard.webp</image:loc>
+      <image:title>دیجی حساب - محاسبه سود فروشندگان دیجی کالا</image:title>
+    </image:image>
   </url>
 </urlset>
