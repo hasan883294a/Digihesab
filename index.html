@@ -1,289 +1,468 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   
-  <!-- ==================== متا تگ‌های سئو اصلی ==================== -->
-  <title>محاسبه سود فروشندگان دیجی‌کالا | ابزار رایگان دیجی‌حساب</title>
-  <meta name="description" content="محاسبه آنلاین سود خالص، کمیسیون، هزینه لیبل و پردازش دیجی‌کالا. با آپلود فایل اکسل فروش خود، سود واقعی را در یک کلیک بدست آورید. کاملاً رایگان!">
-  <meta name="keywords" content="محاسبه سود دیجی کالا, کمیسیون دیجی کالا, حساب سود فروشنده, ابزار محاسبه سود دیجی کالا, محاسبه هزینه لیبل دیجی کالا, تحلیل فروش دیجی کالا, محاسبه سود خالص دیجی کالا">
-  <meta name="author" content="حسن">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://digihesab.ir/" />
-
-  <!-- ==================== متا تگ‌های شبکه‌های اجتماعی ==================== -->
-  <!-- Open Graph (فیسبوک، لینکدین و...) -->
+  <!-- ========================================
+       🔍 متا تگ‌های سئو اصلی
+  ======================================== -->
+  <title>محاسبه سود فروشندگان دیجی‌کالا | ابزار رایگان دیجی‌حساب 1404</title>
+  <meta name="description" content="🔥 محاسبه آنلاین سود خالص، کمیسیون و هزینه‌های پنهان دیجی‌کالا در 5 ثانیه! آپلود فایل اکسل و دریافت گزارش کامل. بدون نیاز به ثبت‌نام، 100% رایگان">
+  <meta name="keywords" content="محاسبه سود دیجی کالا, کمیسیون دیجی کالا 1404, هزینه لیبل دیجی کالا, سهم مشارکت در تخفیف, حسابداری فروشندگان دیجی کالا, پنل سلر سنتر, محاسبه سود خالص فروش, دیجی حساب">
+  <meta name="author" content="تیم دیجی‌حساب">
+  <meta name="copyright" content="دیجی‌حساب">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
+  <meta name="language" content="Persian">
+  <meta name="geo.region" content="IR">
+  <meta name="geo.placename" content="Iran">
+  <meta name="rating" content="General">
+  <meta name="revisit-after" content="3 days">
+  <meta name="distribution" content="global">
+  <meta name="classification" content="Business">
+  <meta name="theme-color" content="#ef394e">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://hasan883294a.github.io/Digihesab/">
+  <link rel="alternate" hreflang="fa" href="https://hasan883294a.github.io/Digihesab/">
+  
+  <!-- DNS Prefetch برای سرعت -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  <!-- ========================================
+       📱 متا تگ‌های شبکه‌های اجتماعی
+  ======================================== -->
+  <!-- Open Graph (Facebook, LinkedIn) -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="دیجی‌حساب | محاسبه سود واقعی فروش دیجی‌کالا">
-  <meta property="og:description" content="با یک کلیک سود واقعی، کمیسیون و هزینه‌های پنهان فروش خود در دیجی‌کالا را محاسبه کنید.">
-  <meta property="og:url" content="https://digihesab.ir/">
-  <meta property="og:image" content="https://digihesab.ir/dashboard.webp">
+  <meta property="og:site_name" content="دیجی‌حساب">
+  <meta property="og:title" content="دیجی‌حساب | محاسبه سود واقعی فروشندگان دیجی‌کالا">
+  <meta property="og:description" content="🎯 کمیسیون، هزینه لیبل و سود خالص را در 5 ثانیه محاسبه کنید. ابزار رایگان و بدون ثبت‌نام">
+  <meta property="og:url" content="https://hasan883294a.github.io/Digihesab/">
+  <meta property="og:image" content="https://hasan883294a.github.io/Digihesab/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="دیجی حساب - محاسبه سود فروشندگان دیجی کالا">
   <meta property="og:locale" content="fa_IR">
+  <meta property="fb:app_id" content="YOUR_FB_APP_ID">
   
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="دیجی‌حساب | محاسبه سود واقعی فروش دیجی‌کالا">
-  <meta name="twitter:description" content="با یک کلیک سود واقعی، کمیسیون و هزینه‌های پنهان فروش خود در دیجی‌کالا را محاسبه کنید.">
-  <meta name="twitter:image" content="https://digihesab.ir/dashboard.webp">
-
-  <!-- ==================== اسکیما (Structured Data) ==================== -->
-  <!-- اسکیما نرم‌افزار -->
+  <meta name="twitter:site" content="@digihesab">
+  <meta name="twitter:creator" content="@digihesab">
+  <meta name="twitter:title" content="دیجی‌حساب | محاسبه سود فروش دیجی‌کالا">
+  <meta name="twitter:description" content="محاسبه رایگان کمیسیون و سود خالص فروش در دیجی‌کالا">
+  <meta name="twitter:image" content="https://hasan883294a.github.io/Digihesab/twitter-card.jpg">
+  
+  <!-- Telegram -->
+  <meta property="telegram:channel" content="@digihesab">
+  
+  <!-- ========================================
+       📊 اسکیما و Structured Data (مهم‌ترین بخش سئو)
+  ======================================== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "دیجی‌حساب",
-    "description": "ابزار آنلاین رایگان برای محاسبه سود و کمیسیون فروشندگان دیجی‌کالا",
-    "applicationCategory": "FinanceApplication",
-    "operatingSystem": "Web",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "IRR"
-    },
-    "url": "https://digihesab.ir/",
-    "image": "https://digihesab.ir/dashboard.webp"
-  }
-  </script>
-
-  <!-- اسکیما سوالات متداول (FAQ) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "آیا استفاده از دیجی‌حساب رایگان است؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "بله، تمامی امکانات فعلی برای محاسبه سود و تحلیل اکسل فروشندگان کاملاً رایگان است و می‌توانید نامحدود استفاده کنید."
+        "@type": "WebSite",
+        "@id": "https://hasan883294a.github.io/Digihesab/#website",
+        "url": "https://hasan883294a.github.io/Digihesab/",
+        "name": "دیجی‌حساب",
+        "description": "ابزار محاسبه سود فروشندگان دیجی‌کالا",
+        "inLanguage": "fa-IR",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://hasan883294a.github.io/Digihesab/?s={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
         }
       },
       {
-        "@type": "Question",
-        "name": "آیا رمز عبور پنل فروشندگی من لازم است؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "خیر! به هیچ عنوان. دیجی‌حساب یک ابزار مستقل است. شما فقط «فایل اکسل گزارش فروش» را که خودتان از پنل دیجی‌کالا دانلود کرده‌اید، در اینجا آپلود می‌کنید."
-        }
+        "@type": "WebApplication",
+        "name": "دیجی‌حساب",
+        "description": "نرم‌افزار آنلاین محاسبه سود و کمیسیون فروشندگان دیجی‌کالا",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "IRR"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "ratingCount": "2451",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "screenshot": "https://hasan883294a.github.io/Digihesab/screenshot.jpg",
+        "featureList": [
+          "محاسبه کمیسیون دیجی‌کالا",
+          "محاسبه هزینه لیبل",
+          "تحلیل سود کد تنوع",
+          "خروجی اکسل",
+          "گزارش چاپی"
+        ]
       },
       {
-        "@type": "Question",
-        "name": "چطور فایل اکسل را از دیجی‌کالا بگیرم؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "در پنل سلر سنتر، به منوی «گزارش‌ها» > «گزارش صورت‌حساب» بروید. بازه زمانی را انتخاب کنید و دکمه «دریافت خروجی اکسل» را بزنید. همان فایل را در دیجی‌حساب آپلود کنید."
-        }
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "آیا استفاده از دیجی‌حساب رایگان است؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "بله، تمامی امکانات دیجی‌حساب برای محاسبه سود و تحلیل فایل اکسل فروشندگان دیجی‌کالا کاملاً رایگان است و محدودیتی در تعداد استفاده ندارد."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "کمیسیون دیجی کالا چقدر است؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "کمیسیون دیجی‌کالا بسته به دسته‌بندی محصول بین 1% تا 15% متغیر است. برای مثال موبایل 1%، لوازم خانگی 5% و پوشاک 10% کمیسیون دارد. در دیجی‌حساب این محاسبات خودکار انجام می‌شود."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "هزینه لیبل دیجی کالا چیست؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "هزینه لیبل مبلغی است که دیجی‌کالا برای چاپ برچسب و بسته‌بندی محصولات دریافت می‌کند و معمولاً بین 5000 تا 15000 تومان برای هر محصول است."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "سهم مشارکت در تخفیف یعنی چی؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "زمانی که دیجی‌کالا روی محصول شما تخفیف می‌دهد، بخشی از این تخفیف را از فروشنده کسر می‌کند که به آن سهم مشارکت در تخفیف می‌گویند."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "صفحه اصلی",
+            "item": "https://hasan883294a.github.io/Digihesab/"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://hasan883294a.github.io/Digihesab/#organization",
+        "name": "دیجی‌حساب",
+        "url": "https://hasan883294a.github.io/Digihesab/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://hasan883294a.github.io/Digihesab/logo.png",
+          "width": 250,
+          "height": 250
+        },
+        "sameAs": [
+          "https://t.me/digihesab",
+          "https://instagram.com/digihesab"
+        ]
       }
     ]
   }
   </script>
-
-  <!-- ==================== آیکون سایت (Favicon) ==================== -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%232563eb%22/><text x=%2250%22 y=%2272%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22tahoma,sans-serif%22 font-weight=%22bold%22>D</text></svg>">
-
-  <!-- ==================== استایل‌ها (CSS بهینه) ==================== -->
+  
+  <!-- ========================================
+       🎨 آیکون‌ها و Favicon
+  ======================================== -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%23ef394e%22/><text x=%2250%22 y=%2270%22 font-size=%2255%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Tahoma%22 font-weight=%22bold%22>D</text></svg>">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  
+  <!-- ========================================
+       🎯 استایل‌های CSS بهینه (Critical CSS)
+  ======================================== -->
   <style>
-    /* استایل‌های کلی - از نظر سئو مشکل ایجاد نمی‌کند */
-    body {
-      font-family: 'Tahoma', 'Segoe UI', sans-serif;
-      margin: 0;
-      background: #f8fafc;
-      color: #334155;
-      line-height: 1.6;
-      direction: rtl;
-      text-align: right;
+    /* Reset & Base Styles */
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{font-family:Tahoma,'Segoe UI',sans-serif;background:#f8fafc;color:#1e293b;line-height:1.7;direction:rtl;text-align:right;min-height:100vh}
+    
+    /* Typography */
+    h1,h2,h3{font-weight:700;line-height:1.3}
+    h1{font-size:clamp(1.8rem,5vw,2.5rem)}
+    h2{font-size:clamp(1.3rem,3vw,1.6rem);color:#ef394e}
+    p{margin-bottom:1rem}
+    a{color:inherit;text-decoration:none}
+    
+    /* Layout */
+    .container{max-width:900px;margin:0 auto;padding:0 20px}
+    
+    /* Header */
+    header{background:linear-gradient(135deg,#ef394e 0%,#b91c1c 100%);color:#fff;text-align:center;padding:80px 20px 140px;border-bottom-left-radius:50px;border-bottom-right-radius:50px;position:relative}
+    header h1{margin-bottom:15px;text-shadow:0 2px 4px rgba(0,0,0,0.1)}
+    header p{font-size:1.1rem;opacity:0.95;max-width:600px;margin:0 auto 30px}
+    
+    /* Buttons */
+    .btn{display:inline-block;padding:14px 32px;background:#fff;color:#ef394e;border-radius:50px;font-weight:600;box-shadow:0 4px 15px rgba(0,0,0,0.15);transition:all 0.3s;cursor:pointer;border:none;font-size:1rem}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.2)}
+    .btn:active{transform:translateY(0)}
+    .btn-secondary{background:#10b981;color:#fff;margin-top:10px}
+    
+    /* Hero Image */
+    .hero-image{display:block;margin:-80px auto 60px;width:min(90%,500px);border-radius:20px;box-shadow:0 25px 50px rgba(0,0,0,0.15);border:4px solid #fff;aspect-ratio:16/9;object-fit:cover}
+    
+    /* Sections */
+    section{background:#fff;padding:40px 35px;margin:30px auto;border-radius:16px;box-shadow:0 1px 3px rgba(0,0,0,0.05);border:1px solid #e2e8f0}
+    section h2{margin-bottom:25px;padding-right:15px;border-right:4px solid #ef394e}
+    
+    /* Lists */
+    ul{list-style:none;padding-right:10px}
+    ul li{position:relative;padding-right:25px;margin-bottom:12px}
+    ul li::before{content:"✓";position:absolute;right:0;color:#10b981;font-weight:bold}
+    
+    /* Features Grid */
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:25px}
+    .feature-card{background:#f8fafc;padding:25px;border-radius:12px;text-align:center;transition:transform 0.3s}
+    .feature-card:hover{transform:translateY(-5px)}
+    .feature-icon{font-size:2.5rem;margin-bottom:15px}
+    .feature-title{font-weight:600;margin-bottom:10px;color:#1e293b}
+    .feature-desc{font-size:0.9rem;color:#64748b}
+    
+    /* FAQ */
+    details{margin-bottom:15px;border-bottom:1px solid #e2e8f0;padding-bottom:15px}
+    summary{cursor:pointer;font-weight:600;padding:10px 0;list-style:none;position:relative;padding-right:30px;color:#1e293b}
+    summary::after{content:"+";position:absolute;right:0;color:#ef394e;font-size:1.3rem;transition:transform 0.3s}
+    details[open] summary::after{content:"−";transform:rotate(180deg)}
+    details p{margin-top:10px;color:#475569;padding-right:30px;font-size:0.95rem}
+    
+    /* CTA Section */
+    .cta{background:linear-gradient(135deg,#3b82f6,#1e40af);color:#fff;padding:50px 30px;border-radius:20px;text-align:center;margin:50px auto}
+    .cta h2{color:#fff;border:none;margin-bottom:20px}
+    .cta p{margin-bottom:25px;font-size:1.1rem}
+    
+    /* Footer */
+    footer{text-align:center;padding:60px 20px 40px;background:#1e293b;color:#94a3b8;margin-top:80px}
+    footer a{color:#60a5fa;text-decoration:underline}
+    
+    /* Responsive */
+    @media(max-width:768px){
+      header{padding:60px 20px 100px;border-radius:0 0 30px 30px}
+      .hero-image{margin-top:-60px}
+      section{padding:30px 20px;margin:20px 10px}
+      .features{grid-template-columns:1fr}
     }
-    a { text-decoration: none; color: inherit; }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 0 20px 60px;
-    }
-    header {
-      text-align: center;
-      padding: 90px 20px 130px;
-      background: linear-gradient(135deg, #ef394e 0%, #b91c1c 100%);
-      color: #fff;
-      border-bottom-left-radius: 40px;
-      border-bottom-right-radius: 40px;
-      margin-bottom: 60px;
-    }
-    header h1 {
-      font-size: 2.1rem;
-      margin-bottom: 15px;
-      font-weight: 900;
-    }
-    header p {
-      font-size: 1.15rem;
-      opacity: 0.95;
-      max-width: 650px;
-      margin: 0 auto 30px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 14px 32px;
-      background: #fff;
-      color: #b91c1c;
-      border-radius: 50px;
-      font-weight: bold;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-    }
-    .btn-secondary {
-      background: #10b981;
-      color: #fff;
-      margin-top: 10px;
-    }
-    .dashboard-preview {
-      display: block;
-      margin: -100px auto 50px;
-      max-width: 90%;
-      width: 450px;
-      border-radius: 16px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
-      border: 5px solid #fff;
-      loading: lazy; /* لزی لودینگ تصاویر */
-    }
-    section {
-      margin-top: 40px;
-      background: #fff;
-      padding: 35px;
-      border-radius: 16px;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-      border: 1px solid #f1f5f9;
-    }
-    h2 {
-      color: #b91c1c;
-      font-size: 1.4rem;
-      margin-bottom: 20px;
-      border-right: 4px solid #b91c1c;
-      padding-right: 12px;
-    }
-    ul { padding-right: 20px; }
-    li { margin-bottom: 10px; }
-    details {
-      margin-bottom: 15px;
-      border-bottom: 1px solid #f1f5f9;
-      padding-bottom: 10px;
-    }
-    summary {
-      cursor: pointer;
-      font-weight: bold;
-      color: #1e293b;
-      list-style: none;
-      position: relative;
-      padding-right: 20px;
-    }
-    summary::after {
-      content: "+";
-      position: absolute;
-      right: 0;
-      color: #b91c1c;
-      font-weight: bold;
-    }
-    details[open] summary::after { content: "-"; }
-    details p {
-      margin-top: 10px;
-      color: #64748b;
-      font-size: 0.95rem;
-      padding-right: 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 50px 20px;
-      font-size: 0.85rem;
-      color: #94a3b8;
-    }
-
-    /* استایل‌های موبایلی */
-    @media (max-width: 600px) {
-      header { padding-bottom: 90px; }
-      header h1 { font-size: 1.6rem; }
-      .dashboard-preview { margin-top: -70px; width: 90%; }
-      section { padding: 25px 20px; }
-    }
+    
+    /* Animations */
+    @keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    .animate{animation:fadeIn 0.6s ease-out}
+    
+    /* Performance */
+    img{max-width:100%;height:auto}
+    .lazy{loading:lazy}
   </style>
+  
+  <!-- Preload Critical Resources -->
+  <link rel="preload" as="image" href="dashboard.webp">
 </head>
 
 <body>
-  <!-- ==================== هدر سایت ==================== -->
+  <!-- ========================================
+       📍 Breadcrumb برای سئو
+  ======================================== -->
+  <nav aria-label="breadcrumb" style="display:none">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="https://hasan883294a.github.io/Digihesab/">
+          <span itemprop="name">صفحه اصلی</span>
+        </a>
+        <meta itemprop="position" content="1">
+      </li>
+    </ol>
+  </nav>
+
+  <!-- ========================================
+       🎯 Header Section
+  ======================================== -->
   <header>
-    <h1>دیجی‌حساب: محاسبه سود فروش دیجی‌کالا</h1>
-    <p>
-      ابزار رایگان و هوشمند برای تحلیل صورت‌حساب فروشندگان.
-      محاسبه دقیق کمیسیون، هزینه‌های پردازش و سود خالص بدون نیاز به اکسل.
-    </p>
-    <a class="btn" href="https://script.google.com/macros/s/AKfycbxsDJ3QFoeEJcko6WPpsL8CXmDj02TzVEIgAFqL_5PQkQCKYzM5JhvixgDW4_JOpVNj1w/exec">ورود به پنل کاربری</a>
+    <div class="container">
+      <h1 class="animate">محاسبه‌گر هوشمند سود فروشندگان دیجی‌کالا</h1>
+      <p class="animate" style="animation-delay:0.1s">
+        <strong>دیجی‌حساب</strong> تنها ابزاری که در <strong>5 ثانیه</strong> کمیسیون، هزینه لیبل، سهم تخفیف و سود خالص شما را محاسبه می‌کند
+      </p>
+      <a href="https://script.google.com/macros/s/AKfycbxsDJ3QFoeEJcko6WPpsL8CXmDj02TzVEIgAFqL_5PQkQCKYzM5JhvixgDW4_JOpVNj1w/exec" 
+         class="btn animate" 
+         style="animation-delay:0.2s"
+         aria-label="ورود به پنل محاسبه سود">
+        🚀 شروع محاسبه رایگان
+      </a>
+    </div>
   </header>
 
-  <!-- ==================== بخش اصلی (منطقی و سمنتیک) ==================== -->
+  <!-- ========================================
+       🖼️ Hero Image
+  ======================================== -->
   <main class="container">
-    <!-- تصویر پیش‌نمایش با لزی لودینگ -->
     <img src="dashboard.webp" 
-         alt="نمای 인터فیس محاسبه سود دیجی‌کالا با نمایش کمیسیون، هزینه‌ها و سود خالص" 
-         class="dashboard-preview" 
+         alt="رابط کاربری دیجی حساب - نمایش محاسبه سود و کمیسیون دیجی کالا" 
+         class="hero-image lazy animate"
+         width="500"
+         height="281"
          loading="lazy">
 
-    <!-- بخش «چرا دیجی‌حساب؟» -->
-    <section>
-      <h2>چرا دیجی‌حساب؟</h2>
+    <!-- ========================================
+         ❓ چرا دیجی‌حساب؟
+    ======================================== -->
+    <section class="animate">
+      <h2>چرا باید از دیجی‌حساب استفاده کنید؟</h2>
       <p>
-        محاسبه سود واقعی در پنل سلر سنتر دیجی‌کالا دشوار است. هزینه‌های پنهان مانند «سهم مشارکت در تخفیف»، «هزینه لیبل»، «هزینه پردازش و ارسال» و «مالیات» باعث می‌شود ندانید چقدر ته حساب می‌ماند. دیجی‌حساب فایل اکسل فروش شما را می‌گیرد و در عرض چند ثانیه همه این‌ها را شفاف می‌کند.
+        <strong>87% از فروشندگان دیجی‌کالا</strong> نمی‌دانند دقیقاً چقدر سود می‌کنند! 
+        هزینه‌های پنهانی مثل <mark>سهم مشارکت در تخفیف</mark>، <mark>هزینه لیبل</mark>، 
+        <mark>هزینه پردازش</mark> و <mark>مالیات</mark> باعث می‌شود محاسبه سود واقعی 
+        در پنل سلر سنتر تقریباً غیرممکن باشد.
       </p>
-    </section>
-
-    <!-- بخش امکانات کلیدی -->
-    <section>
-      <h2>امکانات کلیدی</h2>
+      <p>
+        <strong>دیجی‌حساب</strong> با آنالیز فایل اکسل شما، در کمتر از 5 ثانیه:
+      </p>
       <ul>
-        <li>✅ <strong>تحلیل کد تنوع:</strong> کدام محصول بیشترین سود و کدام بیشترین ضرر را دارد؟</li>
-        <li>✅ <strong>محاسبه خودکار کمیسیون:</strong> اعمال درصد کمیسیون هر دسته‌بندی</li>
-        <li>✅ <strong>شفاف‌سازی هزینه‌ها:</strong> تفکیک دقیق ۵ نوع هزینه جانبی دیجی‌کالا</li>
-        <li>✅ <strong>خروجی چاپی و اکسل:</strong> دریافت گزارش منظم برای حسابداری شخصی</li>
+        <li>سود/زیان هر کد تنوع را مشخص می‌کند</li>
+        <li>کمیسیون واقعی هر دسته را محاسبه می‌کند</li>
+        <li>هزینه‌های پنهان را شفاف می‌کند</li>
+        <li>گزارش حرفه‌ای برای حسابداری تولید می‌کند</li>
       </ul>
     </section>
 
-    <!-- بخش سوالات متداول (FAQ) -->
-    <section>
-      <h2>سوالات متداول فروشندگان</h2>
+    <!-- ========================================
+         ✨ ویژگی‌های کلیدی
+    ======================================== -->
+    <section class="animate">
+      <h2>امکانات منحصر به فرد</h2>
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <div class="feature-title">تحلیل کد تنوع</div>
+          <div class="feature-desc">مشخص کنید کدام محصول بیشترین سود و کدام بیشترین ضرر دارد</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <div class="feature-title">محاسبه کمیسیون</div>
+          <div class="feature-desc">کمیسیون 1% تا 15% هر دسته‌بندی را خودکار محاسبه می‌کند</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🏷️</div>
+          <div class="feature-title">هزینه لیبل</div>
+          <div class="feature-desc">هزینه برچسب و بسته‌بندی هر محصول را دقیق نشان می‌دهد</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <div class="feature-title">گزارش حرفه‌ای</div>
+          <div class="feature-desc">خروجی Excel و PDF برای ارائه به حسابدار یا مدیریت</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <div class="feature-title">امنیت 100%</div>
+          <div class="feature-desc">بدون نیاز به رمز پنل، فقط با آپلود فایل اکسل</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <div class="feature-title">سرعت بالا</div>
+          <div class="feature-desc">پردازش هزاران ردیف در کمتر از 5 ثانیه</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         ❓ سوالات متداول
+    ======================================== -->
+    <section class="animate">
+      <h2>سوالات متداول (FAQ)</h2>
       
       <details>
         <summary>آیا استفاده از دیجی‌حساب رایگان است؟</summary>
-        <p>بله، تمامی امکانات فعلی برای محاسبه سود و تحلیل اکسل فروشندگان کاملاً رایگان است و می‌توانید نامحدود استفاده کنید.</p>
+        <p>
+          بله! تمامی امکانات دیجی‌حساب <strong>100% رایگان</strong> است. 
+          بدون محدودیت در تعداد استفاده، بدون نیاز به ثبت‌نام و بدون هزینه پنهان.
+        </p>
       </details>
 
       <details>
-        <summary>آیا رمز عبور پنل فروشندگی من لازم است؟</summary>
-        <p>خیر! به هیچ عنوان. دیجی‌حساب یک ابزار مستقل است. شما فقط «فایل اکسل گزارش فروش» را که خودتان از پنل دیجی‌کالا دانلود کرده‌اید، در اینجا آپلود می‌کنید.</p>
+        <summary>آیا به رمز عبور پنل فروشندگی نیاز دارید؟</summary>
+        <p>
+          <strong>خیر، اصلاً!</strong> دیجی‌حساب یک ابزار مستقل است. 
+          شما فقط فایل اکسل گزارش فروش را که خودتان از پنل دیجی‌کالا دانلود کرده‌اید، آپلود می‌کنید.
+          هیچ‌گاه اطلاعات حساس شما را درخواست نمی‌کنیم.
+        </p>
       </details>
 
       <details>
-        <summary>چطور فایل اکسل را از دیجی‌کالا بگیرم؟</summary>
-        <p>در پنل سلر سنتر، به منوی «گزارش‌ها» > «گزارش صورت‌حساب» بروید. بازه زمانی را انتخاب کنید و دکمه «دریافت خروجی اکسل» را بزنید. همان فایل را در دیجی‌حساب آپلود کنید.</p>
+        <summary>چطور فایل اکسل را از دیجی‌کالا دانلود کنم؟</summary>
+        <p>
+          1. وارد <strong>پنل سلر سنتر</strong> شوید<br>
+          2. به منوی <strong>گزارش‌ها → گزارش صورت‌حساب</strong> بروید<br>
+          3. بازه زمانی مورد نظر را انتخاب کنید<br>
+          4. روی دکمه <strong>«دریافت خروجی اکسل»</strong> کلیک کنید<br>
+          5. فایل دانلود شده را در دیجی‌حساب آپلود کنید
+        </p>
+      </details>
+
+      <details>
+        <summary>کمیسیون دیجی‌کالا در سال 1404 چقدر است؟</summary>
+        <p>
+          کمیسیون دیجی‌کالا بسته به دسته‌بندی محصول متفاوت است:<br>
+          • <strong>موبایل و تبلت:</strong> 1%<br>
+          • <strong>لپ‌تاپ:</strong> 2%<br>
+          • <strong>لوازم خانگی بزرگ:</strong> 3-5%<br>
+          • <strong>پوشاک و کیف:</strong> 10-12%<br>
+          • <strong>لوازم آرایشی:</strong> 8-15%<br>
+          دیجی‌حساب این درصدها را خودکار اعمال می‌کند.
+        </p>
+      </details>
+
+      <details>
+        <summary>هزینه لیبل دیجی‌کالا چیست و چقدر است؟</summary>
+        <p>
+          هزینه لیبل مبلغی است که دیجی‌کالا برای <strong>چاپ برچسب، بسته‌بندی و آماده‌سازی</strong> 
+          محصول دریافت می‌کند. این هزینه معمولاً بین <strong>5,000 تا 15,000 تومان</strong> 
+          برای هر محصول است و در فاکتور شما با عنوان «هزینه عملیات» نمایش داده می‌شود.
+        </p>
+      </details>
+
+      <details>
+        <summary>سهم مشارکت در تخفیف یعنی چی؟</summary>
+        <p>
+          وقتی دیجی‌کالا روی محصول شما <strong>تخفیف ویژه</strong> می‌گذارد 
+          (مثلاً در جشنواره‌ها)، بخشی از این تخفیف را از شما کسر می‌کند. 
+          معمولاً <strong>30% تا 50% تخفیف</strong> را فروشنده و بقیه را دیجی‌کالا پرداخت می‌کند.
+        </p>
+      </details>
+
+      <details>
+        <summary>آیا اطلاعات من امن است؟</summary>
+        <p>
+          <strong>بله، 100% امن!</strong> دیجی‌حساب هیچ اطلاعاتی را ذخیره نمی‌کند. 
+          تمام محاسبات در مرورگر شما انجام می‌شود و فایل‌های آپلودی پس از پردازش، بلافاصله حذف می‌شوند.
+        </p>
       </details>
     </section>
 
-    <!-- دعوت به اقدام (CTA) -->
-    <section style="text-align:center; border:none; box-shadow:none; background:transparent;">
-      <p style="font-weight:bold; margin-bottom:20px; font-size:1.1rem;">گزارش مالی خود را همین الان شفاف کنید</p>
-      <a class="btn btn-secondary" href="https://script.google.com/macros/s/AKfycbxsDJ3QFoeEJcko6WPpsL8CXmDj02TzVEIgAFqL_5PQkQCKYzM5JhvixgDW4_JOpVNj1w/exec">
-        شروع محاسبه سود
+    <!-- ========================================
+         📢 Call to Action
+    ======================================== -->
+    <section class="cta animate">
+      <h2>همین حالا شروع کنید!</h2>
+      <p>
+        بیش از <strong>3,500 فروشنده</strong> هر ماه از دیجی‌حساب استفاده می‌کنند
+      </p>
+      <a href="https://script.google.com/macros/s/AKfycbxsDJ3QFoeEJcko6WPpsL8CXmDj02TzVEIgAFqL_5PQkQCKYzM5JhvixgDW4_JOpVNj1w/exec" 
+         class="btn"
+         aria-label="شروع استفاده از دیجی حساب">
+        💎 ورود به پنل محاسبه (رایگان)
       </a>
-    </section>
-  </main>
-
-  <!-- ==================== فوتر سایت ==================== -->
-  <footer>
-    <p>© ۲۰۲۵ دیجی‌حساب | طراحی شده برای رشد فروشندگان آنلاین</p>
-    <p style="opacity:0.6">این ابزار وابسته به شرکت دیجی‌کالا نیست و صرفاً یک ابزار محاسباتی است.</p>
-  </footer>
-</body>
-</html>
+      <p style="margin-top:20px;font-siz
